@@ -1,0 +1,11 @@
+
+<fieldset>
+<label>
+  Contador: {{contador}}
+</label>
+  <h2>Incremento </h2>
+  <app-btn-emmiter [incremento]=1 (enventoIncrementar)='incBy($event)'></app-btn-emmiter>
+  <app-btn-emmiter [incremento]=5 (enventoIncrementar)='incBy($event)' ></app-btn-emmiter>
+  <app-btn-emmiter [incremento]=-1 (enventoIncrementar)='incBy($event)'></app-btn-emmiter>
+  <app-btn-emmiter [incremento]=-5 (enventoIncrementar)='incBy($event)'></app-btn-emmiter>
+</fieldset>
